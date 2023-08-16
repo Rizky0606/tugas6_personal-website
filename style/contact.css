@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
 body {
   margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 nav {
   background-color: #ececec;
@@ -87,28 +90,33 @@ nav ul li a {
   border: 1px solid #fff;
 }
 
-main {
-  width: 700px;
-  margin: 90px auto;
+body {
+  background-color: rgb(201, 201, 201);
 }
 
-main h1 {
+main {
+  height: 100vh;
+}
+
+form h1 {
   text-align: center;
 }
 
 form {
+  width: 700px;
   display: flex;
   flex-direction: column;
   border: 1px solid black;
-  margin: auto;
+  margin: 70px auto;
   padding: 20px;
+  font-size: 20px;
   border-radius: 10px;
   box-shadow: 2px 13px 21px 5px rgba(135, 130, 130, 0.75);
   -webkit-box-shadow: 2px 13px 21px 5px rgba(135, 130, 130, 0.75);
   -moz-box-shadow: 2px 13px 21px 5px rgba(135, 130, 130, 0.75);
 }
 form label {
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 form textarea {
@@ -117,6 +125,7 @@ form textarea {
 form input,
 select {
   height: 30px;
+  margin-bottom: 10px;
   border-radius: 5px;
 }
 form button {
@@ -136,7 +145,7 @@ button:hover {
 }
 
 @media only screen and (max-width: 800px) {
-  main {
+  form {
     width: 500px;
     margin: 70px auto;
   }
@@ -154,24 +163,24 @@ button:hover {
   #barsmenu {
     display: block;
   }
-  main {
+  form {
     width: 350px;
     margin: 50px auto;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  main {
+  form {
     width: 285px;
     margin: 35px auto;
   }
 }
 
 @media only screen and (max-width: 340px) {
-  main {
+  form {
     width: 235px;
   }
-  main h1 {
+  form h1 {
     font-size: 25px;
   }
 }

@@ -22,14 +22,29 @@
                 alt=""
               />
             </li>
-            <li><a href="./index.html" class="nav-home">Home</a></li>
-            <li><a href="./blog.html">Project</a></li>
+            <li class="item-collapse">
+              <a href="./index.html" class="nav-home">Home</a>
+            </li>
+            <li class="item-collapse"><a href="./blog.html">Project</a></li>
           </ul>
         </div>
-        <div class="nav-right">
-          <a href="./contact.html">Contact Me</a>
+        <div class="nav-right item-collapse">
+          <a href="./contact.html">Contact</a>
+        </div>
+        <div class="nav-right" id="barsmenu">
+          <button
+            style="background-color: transparent; border: none; cursor: pointer"
+            onclick="openHamburger();"
+          >
+            <i class="fa-2x fa-solid fa-bars"></i>
+          </button>
         </div>
       </nav>
+      <div class="hamburger-nav-container" id="hamburger-nav-container">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </header>
 
     <main>
@@ -120,5 +135,7 @@
         </div>
       </div>
     </main>
+    <script src="./js/index.js"></script>
+    t
   </body>
 </html>
